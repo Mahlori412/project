@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+
+    <title>Login!</title>
+  </head>
+  <body>
+    <div class="container">
+        <form class="form-signin">
+          <h1 class="text-center">Sign in</h1>
+          <p>
+            <label class="sr-only">Email address</label>
+            <input id="email" type="email" placeholder="email address" class="form-control" required autofocus>
+          </p>
+
+          <p>
+              <label class="sr-only">password</label>
+              <input id="password" type="password" placeholder="password" class="form-control" required autofocus>
+          </p>
+
+          <p><label class="checkbox"><input type="checkbox">Remember me</label></p>
+
+          <button type="submit" class="btn btn-primary btn-block" onclick="login()">Sign in</button>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+  <script>
+    function Login()
+    {
+      let email=document.getElementById("email");
+      let pass=document.getElementById("password");
+
+      if(email.value == "h@gmail.com" && pass.value == "12345")
+      {
+        location.href("post.html");
+      }
+    }
+  </script>
+</html>
